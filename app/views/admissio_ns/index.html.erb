@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Admissions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Period inscription</th>
+      <th>Value inscription</th>
+      <th>Date limit</th>
+      <th>Requirements</th>
+      <th>Vacancies</th>
+      <th>Info additional</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @admissions.each do |admission| %>
+      <tr>
+        <td><%= admission.ID %></td>
+        <td><%= admission.PERIOD_INSCRIPTION %></td>
+        <td><%= admission.VALUE_INSCRIPTION %></td>
+        <td><%= admission.DATE_LIMIT %></td>
+        <td><%= admission.REQUIREMENTS %></td>
+        <td><%= admission.VACANCIES %></td>
+        <td><%= admission.INFO_ADDITIONAL %></td>
+        <td><%= link_to 'Show', admission %></td>
+        <td><%= link_to 'Edit', edit_admission_path(admission) %></td>
+        <td><%= link_to 'Destroy', admission, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Admission', new_admission_path %>

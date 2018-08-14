@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @institution.ID %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @institution.NAME %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @institution.DESCRIPTION %>
+</p>
+
+<p>
+  <strong>Character:</strong>
+  <%= @institution.CHARACTER %>
+</p>
+
+<p>
+  <strong>Address ppal:</strong>
+  <%= @institution.ADDRESS_PPAL %>
+</p>
+
+<p>
+  <strong>Phones:</strong>
+  <%= @institution.PHONES %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @institution.WEBSITE %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @institution.EMAIL %>
+</p>
+
+<%= link_to 'Edit', edit_institution_path(@institution) %> |
+<%= link_to 'Back', institutions_path %>

@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @course.ID %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @course.NAME %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @course.DURATION %>
+</p>
+
+<p>
+  <strong>Date start:</strong>
+  <%= @course.DATE_START %>
+</p>
+
+<p>
+  <strong>Date end:</strong>
+  <%= @course.DATE_END %>
+</p>
+
+<p>
+  <strong>Place:</strong>
+  <%= @course.PLACE %>
+</p>
+
+<p>
+  <strong>Investment:</strong>
+  <%= @course.INVESTMENT %>
+</p>
+
+<p>
+  <strong>Info additional:</strong>
+  <%= @course.INFO_ADDITIONAL %>
+</p>
+
+<%= link_to 'Edit', edit_course_path(@course) %> |
+<%= link_to 'Back', courses_path %>

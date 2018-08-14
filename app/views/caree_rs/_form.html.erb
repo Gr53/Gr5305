@@ -1,0 +1,77 @@
+<%= form_with(model: career, local: true) do |form| %>
+  <% if career.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(career.errors.count, "error") %> prohibited this career from being saved:</h2>
+
+      <ul>
+      <% career.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :ID %>
+    <%= form.number_field :ID %>
+  </div>
+
+  <div class="field">
+    <%= form.label :TITLE %>
+    <%= form.text_field :TITLE %>
+  </div>
+
+  <div class="field">
+    <%= form.label :LEVEL_EDUCATION %>
+    <%= form.text_field :LEVEL_EDUCATION %>
+  </div>
+
+  <div class="field">
+    <%= form.label :MODALITY %>
+    <%= form.text_field :MODALITY %>
+  </div>
+
+  <div class="field">
+    <%= form.label :DURATION %>
+    <%= form.text_field :DURATION %>
+  </div>
+
+  <div class="field">
+    <%= form.label :WORKING_DAY %>
+    <%= form.text_field :WORKING_DAY %>
+  </div>
+
+  <div class="field">
+    <%= form.label :VALUE_SEMESTER %>
+    <%= form.text_field :VALUE_SEMESTER %>
+  </div>
+
+  <div class="field">
+    <%= form.label :VALUE_CURRICULUM %>
+    <%= form.text_field :VALUE_CURRICULUM %>
+  </div>
+
+  <div class="field">
+    <%= form.label :QUALIFIED_REGISTRATION %>
+    <%= form.text_field :QUALIFIED_REGISTRATION %>
+  </div>
+
+  <div class="field">
+    <%= form.label :NUM_CREDITS %>
+    <%= form.text_field :NUM_CREDITS %>
+  </div>
+
+  <div class="field">
+    <%= form.label :AREA_KNOWLEDGE %>
+    <%= form.text_field :AREA_KNOWLEDGE %>
+  </div>
+
+  <div class="field">
+    <%= form.label :INFO_ADDITIONAL %>
+    <%= form.text_field :INFO_ADDITIONAL %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

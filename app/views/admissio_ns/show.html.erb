@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @admission.ID %>
+</p>
+
+<p>
+  <strong>Period inscription:</strong>
+  <%= @admission.PERIOD_INSCRIPTION %>
+</p>
+
+<p>
+  <strong>Value inscription:</strong>
+  <%= @admission.VALUE_INSCRIPTION %>
+</p>
+
+<p>
+  <strong>Date limit:</strong>
+  <%= @admission.DATE_LIMIT %>
+</p>
+
+<p>
+  <strong>Requirements:</strong>
+  <%= @admission.REQUIREMENTS %>
+</p>
+
+<p>
+  <strong>Vacancies:</strong>
+  <%= @admission.VACANCIES %>
+</p>
+
+<p>
+  <strong>Info additional:</strong>
+  <%= @admission.INFO_ADDITIONAL %>
+</p>
+
+<%= link_to 'Edit', edit_admission_path(@admission) %> |
+<%= link_to 'Back', admissions_path %>

@@ -1,0 +1,2 @@
+class Headquarters < ApplicationRecord
+end

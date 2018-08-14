@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @scholarship.ID %>
+</p>
+
+<p>
+  <strong>Date limit:</strong>
+  <%= @scholarship.DATE_LIMIT %>
+</p>
+
+<p>
+  <strong>Requirements:</strong>
+  <%= @scholarship.REQUIREMENTS %>
+</p>
+
+<p>
+  <strong>Vacancies:</strong>
+  <%= @scholarship.VACANCIES %>
+</p>
+
+<p>
+  <strong>Info additional:</strong>
+  <%= @scholarship.INFO_ADDITIONAL %>
+</p>
+
+<%= link_to 'Edit', edit_scholarship_path(@scholarship) %> |
+<%= link_to 'Back', scholarships_path %>
