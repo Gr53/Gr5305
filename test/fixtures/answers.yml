@@ -1,9 +1,0 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  ID: 1
-  ANSWER_VOTED: MyString
-
-two:
-  ID: 1
-  ANSWER_VOTED: MyString

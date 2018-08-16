@@ -1,2 +1,0 @@
-class Headquarters < ApplicationRecord
-end
