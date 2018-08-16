@@ -8,19 +8,22 @@ default: &default
   adapter: postgresql
   pool: 5
   encoding: unicode
-  username: postgres
-  password:
+  username: ckgkrkctfisehn
+  password: 14a0a8572b86b36e4f2bed222bafb963c9f1daa6ed2456ca80582fea5dd465d8
+  host: ec2-54-163-246-5.compute-1.amazonaws.com
 
 development:
   <<: *default
-  database: app_bd
+  database: dc88cc1norsdd7
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: app_bd
+  database: dc88cc1norsdd7
 
 production:
   <<: *default
-  database: app_bd
+  database: dc88cc1norsdd7
+
+ 
